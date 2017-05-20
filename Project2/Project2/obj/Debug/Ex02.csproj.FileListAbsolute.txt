@@ -1,0 +1,5 @@
+c:\users\oznas\onedrive\documents\visual studio 2015\Projects\Project2\Project2\bin\Debug\Project2.exe
+c:\users\oznas\onedrive\documents\visual studio 2015\Projects\Project2\Project2\bin\Debug\Project2.pdb
+c:\users\oznas\onedrive\documents\visual studio 2015\Projects\Project2\Project2\obj\Debug\Ex02.csprojResolveAssemblyReference.cache
+c:\users\oznas\onedrive\documents\visual studio 2015\Projects\Project2\Project2\obj\Debug\Project2.exe
+c:\users\oznas\onedrive\documents\visual studio 2015\Projects\Project2\Project2\obj\Debug\Project2.pdb
