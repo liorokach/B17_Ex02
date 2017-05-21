@@ -32,9 +32,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="GameBoard.cs" />
     <Compile Include="ComputerChoise.cs" />
     <Compile Include="enumGameStatus.cs" />
     <Compile Include="Main.cs" />
+    <Compile Include="UserChoise.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
