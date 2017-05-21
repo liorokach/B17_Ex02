@@ -17,14 +17,14 @@ namespace Screen
                m_maxNumGuesses = i_maxNumGuess;
           }
 
-          public void PrintStatusMsg(enumGameStatus i_curGameStatus, int i_curTry)
+          public void PrintStatusMsg(eGameStatus i_curGameStatus, int i_curTry)
           {
-               if (i_curGameStatus == enumGameStatus.win)
+               if (i_curGameStatus == eGameStatus.Win)
                {
                     Console.WriteLine("You guessed after ", i_curTry, " steps!");
                     Console.WriteLine("would you like to start a new game? <Y/N>");
                }
-               else if (i_curGameStatus == enumGameStatus.lose)
+               else if (i_curGameStatus == eGameStatus.Lose)
                {
                     Console.WriteLine("No more guesses allowed. You Lost.");
                     Console.WriteLine("would you like to start a new game? <Y/N>");

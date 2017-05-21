@@ -14,7 +14,7 @@ namespace TheGame
           private UserChoise m_userControl;
           private ComputerChoise m_comChoise;
           //private GameBoard m_gameBoard; // need to be the screen
-          private enumGameStatus m_curGameStatus;
+          private eGameStatus m_curGameStatus;
           private Screen m_gameBoard;
           private int m_maxGuesses;
           public TheGame()
@@ -23,7 +23,7 @@ namespace TheGame
                m_comChoise = new ComputerChoise(4);
                m_userControl = new UserChoise();
                m_gameBoard = new Screen(m_maxGuesses, m_userControl);
-               m_curGameStatus = new enumGameStatus();
+               m_curGameStatus = new eGameStatus();
           }
           public static int GetFromUserMaxGuesses()
           {
@@ -41,32 +41,32 @@ namespace TheGame
           public void RunTheGame()
           {
                int curTry;
-               for (curTry = 0; curTry < m_maxGuesses && m_curGameStatus == enumGameStatus.notFinish; curTry++)
+               for (curTry = 0; curTry < m_maxGuesses && m_curGameStatus == eGameStatus.NotFinish; curTry++)
                {
-                   // m_gameBoard.PrintScreen();///print the board
+                    m_gameBoard.PrintScreen();// m_gameBoard.PrintScreen();///print the board
                     DoIteration();
-                    if (curTry != m_maxGuesses - 1 && m_curGameStatus == enumGameStatus.notFinish)
+                    if (curTry != m_maxGuesses - 1 && m_curGameStatus == eGameStatus.NotFinish)
                     {
                          m_gameBoard.clearScreen();
                     }
                }
-               if (m_curGameStatus == enumGameStatus.notFinish)
+               if (m_curGameStatus == eGameStatus.NotFinish)
                {
-                    m_curGameStatus = enumGameStatus.lose;
+                    m_curGameStatus = eGameStatus.Lose;
                }
                m_gameBoard.PrintStatusMsg(m_curGameStatus,curTry); //print the right msg(win , lose)
           }
           public void DoIteration()
           {
                string guess = getValidGuess();
-               if (m_curGameStatus != enumGameStatus.quit)
+               if (m_curGameStatus != eGameStatus.Quit)
                {
                     m_userControl.AddGuess(guess);
                     string result = m_comChoise.CheckUserChoise(guess);
                     m_userControl.UpdateResult(result); // update the result for the guess
                     if (result == "V V V V")
                     {
-                         m_curGameStatus = enumGameStatus.win;
+                         m_curGameStatus = eGameStatus.Win;
                     }
                }
                //add guess to board
@@ -82,7 +82,7 @@ namespace TheGame
                     valid = checkGuessVaildation(guess);
                     if (guess == "Q") 
                     {
-                         m_curGameStatus = enumGameStatus.quit;///finish the game 
+                         m_curGameStatus = eGameStatus.Quit;///finish the game 
                          valid = true;
                     }
                } while (!valid);
@@ -110,7 +110,7 @@ namespace TheGame
                }
                return validResult;
           }
-          public enumGameStatus getStatus()
+          public eGameStatus getStatus()
           {
                return m_curGameStatus;
           }
