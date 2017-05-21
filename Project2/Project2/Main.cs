@@ -8,16 +8,16 @@ namespace ComputerChoise
     {
         public static void Main()
         {
-               
+               GameBoard.GameBoard b = new GameBoard.GameBoard(9, 9 , 7);
+               b.PrintLineInBoard(0);
+               b.PrintLineInBoard(1);
                ComputerChoise cmp = new ComputerChoise(4);
                UserChoise.UserChoise user = new UserChoise.UserChoise(4);
-               Console.WriteLine(user.GetCompChoise());
-               for (int i = 0; i < 10; i++)
-               {
-                    user.AddGuess(Console.ReadLine());
-                    string res = user.GetResult();
-                    Console.WriteLine(res);
-               }
+               user.AddGuess("A B C D");
+               b.UpdateBoard(user.GetLastGuess(),(cmp.CheckUserChoise(user.GetLastGuess())));
+               b.PrintLineInBoard(2);
+
+
           }
         
         
