@@ -4,10 +4,11 @@ using System.Text;
 
 namespace enumGameStatus
 {
-     public enum enumGameStatus
+     public enum eGameStatus
      {
-          notFinish = 0,
-          win = 1,
-          lose = 2
+          NotFinish = 0,
+          Win = 1,
+          Lose = 2,
+          Quit = 3
      }
 }

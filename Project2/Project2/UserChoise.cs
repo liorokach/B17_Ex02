@@ -5,17 +5,15 @@ namespace UserChoise
 {
      class UserChoise
      {
-          private int m_CurrentNumGuess;
           private List<string> m_strGuess;
           private List<string> m_pinResult;
-          public UserChoise(int i_numberOfLetters)
+          public UserChoise()
           {
                m_strGuess = new List<string>();
                m_pinResult = new List<string>();
           } 
           public void AddGuess(string i_userStrGuess)
           {
-               m_CurrentNumGuess++;
                m_strGuess.Add(i_userStrGuess);
           }
           public void UpdateResult(string i_guessResult)

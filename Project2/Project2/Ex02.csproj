@@ -33,12 +33,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="GameBoard.cs" />
+    <Compile Include="Screen.cs" />
+    <Compile Include="TheGame.cs" />
     <Compile Include="ComputerChoise.cs" />
     <Compile Include="enumGameStatus.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="UserChoise.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Ex02.ConsoleUtils">
+      <HintPath>..\..\..\..\..\..\..\Temp\Ex02.ConsoleUtils.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
