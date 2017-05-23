@@ -1,0 +1,15 @@
+c:\users\oznas\onedrive\documents\visual studio 2015\Projects\Project2\Project2\bin\Debug\Project2.exe
+c:\users\oznas\onedrive\documents\visual studio 2015\Projects\Project2\Project2\bin\Debug\Project2.pdb
+c:\users\oznas\onedrive\documents\visual studio 2015\Projects\Project2\Project2\obj\Debug\Ex02.csprojResolveAssemblyReference.cache
+c:\users\oznas\onedrive\documents\visual studio 2015\Projects\Project2\Project2\obj\Debug\Project2.exe
+c:\users\oznas\onedrive\documents\visual studio 2015\Projects\Project2\Project2\obj\Debug\Project2.pdb
+C:\Users\oznas\Desktop\Project2\Project2\obj\Debug\Project2.exe
+C:\Users\oznas\Desktop\Project2\Project2\obj\Debug\Project2.pdb
+C:\Users\oznas\Desktop\Project2\Project2\bin\Debug\Project2.exe
+C:\Users\oznas\Desktop\Project2\Project2\bin\Debug\Project2.pdb
+C:\Users\oznas\Desktop\Project2\Project2\bin\Debug\Ex02.ConsoleUtils.dll
+C:\Users\oznas\Desktop\Project2\Project2\obj\Debug\Ex02.csprojResolveAssemblyReference.cache
+C:\Users\lioro\Documents\Visual Studio 2015\Projects\Project2\obj\Debug\Project2.exe
+C:\Users\lioro\Documents\Visual Studio 2015\Projects\Project2\obj\Debug\Project2.pdb
+C:\Users\lioro\Documents\Visual Studio 2015\Projects\Project2\bin\Debug\Project2.exe
+C:\Users\lioro\Documents\Visual Studio 2015\Projects\Project2\bin\Debug\Project2.pdb
