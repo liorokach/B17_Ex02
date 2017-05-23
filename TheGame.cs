@@ -47,7 +47,7 @@ namespace TheGame
 
           public void DoIteration()
           {
-               string guess = Screen.GetValidGuess();//// getValidGuess();
+               string guess = Screen.GetValidGuess(); //// getValidGuess();
                if (guess == "Q")
                {
                     m_curGameStatus = eGameStatus.Quit; //// finish the game 

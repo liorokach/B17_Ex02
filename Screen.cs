@@ -18,7 +18,7 @@ namespace Screen
           {
                m_compChoise = i_compChoise;
                m_maxNumGuesses = i_maxNumGuess;
-               m_userChoise = new UserChoise(m_maxNumGuesses); ;
+               m_userChoise = new UserChoise(m_maxNumGuesses); 
           }
 
           public static int GetFromUserMaxGuesses()
@@ -56,6 +56,7 @@ namespace Screen
                {
                     validResult = false;
                }
+
                return validResult;
           }
 
@@ -97,6 +98,7 @@ namespace Screen
                     newGameAnswer = Console.ReadLine();
                     validAnswer = newGameAnswer == "Y" || newGameAnswer == "N";
                }
+
                ClearScreen();
                return newGameAnswer == "Y";
           }

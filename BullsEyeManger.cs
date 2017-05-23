@@ -24,6 +24,7 @@ namespace BullsEyeManger
                     {
                          wantToPlay = false;
                     }
+
                     Screen.ClearScreen();
                }
                while (wantToPlay);
