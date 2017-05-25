@@ -9,7 +9,7 @@ namespace TheGame
      using enumGameStatus;
      using Screen;
 
-     internal class TheGame
+     public class TheGame
      {
           private UserChoise m_userControl;
           private ComputerChoise m_comChoise;
@@ -20,7 +20,7 @@ namespace TheGame
           public TheGame()
           {
                m_maxGuesses = Screen.GetFromUserMaxGuesses();
-               m_comChoise = new ComputerChoise(4);
+               m_comChoise = new ComputerChoise(Screen.k_NumOfLetters);
                m_gameBoard = new Screen(m_maxGuesses, m_comChoise);
                m_userControl = m_gameBoard.GetUserRef();
                m_curGameStatus = new eGameStatus();

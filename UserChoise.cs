@@ -4,7 +4,7 @@ using System.Text;
 
 namespace UserChoise
 {
-     internal class UserChoise
+     public class UserChoise
      {
           private int m_currGuessNum = 0;
           private List<string> m_strGuess;

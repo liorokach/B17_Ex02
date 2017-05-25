@@ -8,11 +8,12 @@ namespace Screen
     using enumGameStatus;
     using ComputerChoise;
 
-     internal class Screen
+     public class Screen
      {
           private ComputerChoise m_compChoise;
           private UserChoise m_userChoise;
           private int m_maxNumGuesses;
+          public const int k_NumOfLetters = 4;
 
           public Screen(int i_maxNumGuess, ComputerChoise i_compChoise)
           {
@@ -52,7 +53,7 @@ namespace Screen
                     }
                }
 
-               if (countLetters != 4)
+               if (countLetters != k_NumOfLetters)
                {
                     validResult = false;
                }
@@ -122,7 +123,7 @@ namespace Screen
                }
                else
                {
-                    Console.WriteLine("Please type your next guess <A B C D> or 'Q'");
+                    Console.WriteLine("Please type your next guess <ABCD> or 'Q'");
                }
           }
 
